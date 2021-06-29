@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import { data } from './data.json';
+import Revenue from './components/Revenue';
+import Expenses from './components/Expenses';
+import GrossProfitMargin from './components/GrossProfitMargin'
+import NetProfitMargin from './components/NetProfitMargin'
+import WorkingCapitalRatio from './components/WorkingCapitalRatio'
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div className='container'>
+        <h3>9SPOKES</h3>
+        <section className='info'>
+          <Revenue title='Revenue' />
+          {/* <Expenses title='Expenses'/>
+          <GrossProfitMargin title='Gross Profit Margin' />
+          <NetProfitMargin title='NetProfitMargin'/>
+          <WorkingCapitalRatio title='WorkingCapitalRatio' /> */}
+
+        </section>
+      </div>
+    </main>
   );
 }
 
