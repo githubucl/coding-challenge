@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-const Revenue = ({ title, info }) => {
+const Question = ({ metric, result }) => {
     const [showInfo, setShowInfo] = useState(false);
+
     return (
         <article className='question'>
             <header>
-                <h4>{title}</h4>
+                <h4>{metric}</h4>
                 <button className='btn' onClick={() => setShowInfo(!showInfo)}>
                     {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
                 </button>
             </header>
-            {showInfo && <p>{info}</p>}
+            {showInfo && <p>{result}</p>}
         </article>
     );
 };
 
-export default Revenue;
+export default Question;

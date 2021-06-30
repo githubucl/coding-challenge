@@ -1,24 +1,25 @@
-import React, { useState } from 'react';
-import { data } from './data.json';
-import Revenue from './components/Revenue';
-import Expenses from './components/Expenses';
-import GrossProfitMargin from './components/GrossProfitMargin'
-import NetProfitMargin from './components/NetProfitMargin'
-import WorkingCapitalRatio from './components/WorkingCapitalRatio'
-function App() {
+import React, { useEffect, useState } from 'react';
+import metrics from './helpers/calculator';
+import Question from './components/Question';
+import './App.css'
+import logo from './logo.svg'
 
+function App() {
+  //store all the information in state
+  const [results, setResults] = useState(metrics);
 
   return (
     <main>
       <div className='container'>
-        <h3>9SPOKES</h3>
-        <section className='info'>
-          <Revenue title='Revenue' />
-          {/* <Expenses title='Expenses'/>
-          <GrossProfitMargin title='Gross Profit Margin' />
-          <NetProfitMargin title='NetProfitMargin'/>
-          <WorkingCapitalRatio title='WorkingCapitalRatio' /> */}
+        <img src={logo} />
 
+        <section className='info'>
+          {results.map((metric) => {
+            return (
+              <Question key={metric.id} {...metric}
+              />
+            );
+          })}
         </section>
       </div>
     </main>
