@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 import App from '../App';
 import Question from '../components/Question'
 
-test('renders correct finance metrics', () => {
+test('renders correct financial metrics', () => {
   render(<App />);
   const revenueElement = screen.getByText(/Revenue/i);
   expect(revenueElement).toBeInTheDocument();

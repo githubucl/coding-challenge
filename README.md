@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-My solution used React framework for app architecture and basic Javascript for calculation. I made my own data for jest testing and I have also created an accordion to represent all the solution in the same style as shown on 9spoke homepage
+My solution used React framework for app architecture and JavaScript for calculation. I made my own data for jest testing which covers all the info needed for calculation. In addition, I have also created an accordion to represent all the solutions in the same style as shown on 9spoke homepage.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
