@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+My solution uses ReactJS and Jest for testing. I created an accordion to represent all the solution in the same style as shown on 9spoke homepage
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

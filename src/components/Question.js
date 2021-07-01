@@ -7,11 +7,13 @@ const Question = ({ metric, result }) => {
         <article className='question'>
             <header>
                 <h4>{metric}</h4>
-                <button className='btn' onClick={() => setShowInfo(!showInfo)}>
+                <button className='btn' data-testid='btn' onClick={() => setShowInfo(!showInfo)}>
                     {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
                 </button>
             </header>
-            {showInfo && <p>{result}</p>}
+            <div data-testid='content'>
+                {showInfo && <p >{result}</p>}
+            </div>
         </article>
     );
 };

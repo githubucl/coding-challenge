@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import metrics from './helpers/calculator';
 import Question from './components/Question';
 import './App.css'
@@ -16,8 +16,7 @@ function App() {
         <section className='info'>
           {results.map((metric) => {
             return (
-              <Question key={metric.id} {...metric}
-              />
+              <Question key={metric.id} {...metric} />
             );
           })}
         </section>

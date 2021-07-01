@@ -24,9 +24,3 @@ export const CURRENT = 'current';
 
 export const BANK = 'bank';
 
-//array of target metrics
-export const metrics = ['Revenue',
-    'Expenses',
-    'Gross Profit Margin',
-    'Net Profit Margin',
-    'Working Capital Ratio'];

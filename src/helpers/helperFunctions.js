@@ -2,7 +2,7 @@
 /**
  * help filtering out the accounts of interest 
  * @param {Array} accounts accepting raw data 
- * @param {*} paramObject an object containing 
+ * @param {*} paramObject an object containing filter criteria 
  * @returns array of filtered accounts
  */
 export const filteringAccounts = (accounts, paramObject) => {
@@ -42,7 +42,8 @@ export const convertToCurrency = (number) => {
     return new Intl.NumberFormat("en-AU", {
         style: "currency",
         currency: "AUD",
-        maximumFractionDigits: 0
+        maximumFractionDigits: 0,
+        minimumFractionDigits: 0
     }).format(number);
 }
 
