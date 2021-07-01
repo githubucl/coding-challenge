@@ -5,9 +5,9 @@
  * @param {*} paramObject an object containing filter criteria 
  * @returns array of filtered accounts
  */
-export const filteringAccounts = (accounts, paramObject) => {
+export const filteringAccounts = (rawData, paramObject) => {
     const parameters = Object.keys(paramObject)
-    return accounts.filter((account) => {
+    return rawData.filter((account) => {
         //set up a switch
         let flag = true
         //looping over the filter criteria 

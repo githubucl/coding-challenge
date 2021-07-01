@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import metrics from './helpers/calculator';
+import { metrics } from './helpers/calculator';
 import Question from './components/Question';
 import './App.css'
 import logo from './logo.svg'

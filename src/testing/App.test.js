@@ -1,7 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect'
-import App from './App';
-import Question from './components/Question'
+import App from '../App';
+import Question from '../components/Question'
+
 test('renders correct finance metrics', () => {
   render(<App />);
   const revenueElement = screen.getByText(/Revenue/i);

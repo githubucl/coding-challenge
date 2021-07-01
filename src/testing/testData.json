@@ -1,0 +1,99 @@
+{
+    "object_category": "general-ledger",
+    "connection_id": "69260737-4c37-4f28-a9dc-270473a6d84a",
+    "user": "b0c9fe7c-915e-45e4-8e9e-49d4f27281a5",
+    "object_creation_date": "2020-10-30T01:58:16.723Z",
+    "data": [
+        {
+            "account_category": "revenue",
+            "total_value": 20000
+        },
+        {
+            "account_category": "expense",
+            "total_value": 10000
+        },
+        {
+            "value_type": "debit",
+            "total_value": 1000,
+            "account_type": "sales"
+        },
+        {
+            "account_category": "assets",
+            "account_type": "current_accounts_receivable",
+            "value_type": "debit",
+            "total_value": 40000
+        },
+        {
+            "account_category": "assets",
+            "account_type": "current",
+            "value_type": "debit",
+            "total_value": 40000
+        },
+        {
+            "account_category": "assets",
+            "account_type": "bank",
+            "value_type": "debit",
+            "total_value": 3000
+        },
+        {
+            "account_category": "assets",
+            "account_type": "current_accounts_receivable",
+            "value_type": "credit",
+            "total_value": 1000
+        },
+        {
+            "account_category": "assets",
+            "account_type": "current",
+            "value_type": "credit",
+            "total_value": 40000
+        },
+        {
+            "account_category": "assets",
+            "account_type": "bank",
+            "value_type": "credit",
+            "total_value": 3000
+        },
+        {
+            "account_category": "liability",
+            "account_type": "current_accounts_payable",
+            "value_type": "debit",
+            "total_value": 50000
+        },
+        {
+            "account_category": "liability",
+            "account_type": "current",
+            "value_type": "debit",
+            "total_value": 40000
+        },
+        {
+            "account_category": "liability",
+            "account_type": "bank",
+            "value_type": "debit",
+            "total_value": 120000
+        },
+        {
+            "account_category": "liability",
+            "account_type": "current_accounts_payable",
+            "value_type": "credit",
+            "total_value": 40000
+        },
+        {
+            "account_category": "liability",
+            "account_type": "current",
+            "value_type": "credit",
+            "total_value": 30000
+        },
+        {
+            "account_category": "liability",
+            "account_type": "bank",
+            "value_type": "credit",
+            "total_value": 20000
+        }
+    ],
+    "currency": "AUD",
+    "object_origin_type": "accounting",
+    "object_origin_category": "bookkeeping",
+    "object_type": "day",
+    "object_class": "timeline-balance",
+    "balance_date": "2020-09-30T00:00:00.000Z"
+}

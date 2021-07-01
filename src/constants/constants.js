@@ -1,4 +1,5 @@
 //value type
+
 export const DEBIT = 'debit';
 
 export const CREDIT = 'credit';
